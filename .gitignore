@@ -1,0 +1,6 @@
+node_modules
+_dev
+.DS_Store
+index_test.html
+package.json
+package-lock.json
