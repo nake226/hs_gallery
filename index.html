@@ -15,7 +15,7 @@
     </h1>
   </header>
   <section id="mv">
-    <img src="./img/mv.jpg" alt="iphone X" class="mv__img">
+    <!-- <img src="./img/mv.jpg" alt="iphone X" class="mv__img"> -->
   </section>
   <section id="form">
     <h2 class="form__title">アップロード</h2>
@@ -29,10 +29,10 @@
       <!-- 性別 -->
       <div class="form__item">
         <span class="form__list">性別</span>
-        <label for="male"></label>
-        <input type="radio" name="gender" id="male" checked="checked">
-        <label for="female"></label>
-        <input type="radio" name="gender" id="female">
+        <label for="male">男性</label>
+        <input type="radio" name="gender" id="male" value="0" checked="checked">
+        <label for="female">女性</label>
+        <input type="radio" name="gender" id="female" value="1">
       </div>
       <!-- 年齢 -->
       <div class="form__item">
@@ -40,14 +40,6 @@
         <label for="age"></label>
         <select name="age" id="age">
           <option value="null">選択してください</option>
-          <option value="u20">20歳未満</option>
-          <option value="u30">20-29歳</option>
-          <option value="u40">30-39歳</option>
-          <option value="u50">40-49歳</option>
-          <option value="u60">50-59歳</option>
-          <option value="u70">60-69歳</option>
-          <option value="u80">70-79歳</option>
-          <option value="o80">80歳以上</option>
         </select>
       </div>
       <!-- 写真 -->
@@ -62,5 +54,14 @@
   <footer>
     <!-- <p class="copy">© Ippo Inc All rights reserved.</p> -->
   </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+  <script>
+    $(function(){
+      var $select = $("#age");
+      for (let i=12;i<=100;i++){
+        $select.append($('<option></option>').val(i).html(i + '歳'));
+      }
+    })
+  </script>
 </body>
 </html>
