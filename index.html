@@ -14,42 +14,43 @@
       <a class="header__link" href="/">Home Screen Gallery</a>
     </h1>
   </header>
-  <section id="mv">
-    <!-- <img src="./img/mv.jpg" alt="iphone X" class="mv__img"> -->
-  </section>
+  <!-- <section id="mv">
+    <img src="./img/mv.jpg" alt="iphone X" class="mv__img">
+  </section> -->
   <section id="form">
-    <h2 class="form__title">アップロード</h2>
-    <form action="#" method="post">
-      <!-- 名前 -->
-      <div class="form__item">
-        <span class="form__list">名前</span>
-        <label for="name"></label>
-        <input type="text" name="name" id="name">
-      </div>
-      <!-- 性別 -->
-      <div class="form__item">
-        <span class="form__list">性別</span>
-        <label for="male">男性</label>
-        <input type="radio" name="gender" id="male" value="0" checked="checked">
-        <label for="female">女性</label>
-        <input type="radio" name="gender" id="female" value="1">
-      </div>
-      <!-- 年齢 -->
-      <div class="form__item">
-        <span class="form__list">年齢</span>
-        <label for="age"></label>
-        <select name="age" id="age">
-          <option value="null">選択してください</option>
-        </select>
-      </div>
-      <!-- 写真 -->
-      <div class="form__item">
-        <label for="file"></label>
-        ＋写真を選択
-        <input type="file" id="file" style="display:none;" value="upload">
-      </div>
-      <button type="submit" id="btn--submit">送信する</button>
-    </form>
+    <div class="container">
+      <h2 class="form__title">アップロード</h2>
+      <form action="#" method="post">
+        <!-- 名前 -->
+        <div class="form__item">
+          <span class="form__list">名前</span>
+          <label for="name"></label>
+          <input type="text" name="name" id="name">
+        </div>
+        <!-- 性別 -->
+        <div class="form__item">
+          <span class="form__list">性別</span>
+          <label for="male">男性</label>
+          <input type="radio" name="gender" id="male" value="0" checked="checked">
+          <label for="female">女性</label>
+          <input type="radio" name="gender" id="female" value="1">
+        </div>
+        <!-- 年齢 -->
+        <div class="form__item">
+          <span class="form__list">年齢</span>
+          <label for="age"></label>
+          <select name="age" id="age">
+            <option value="null">選択してください</option>
+          </select>
+        </div>
+        <!-- 写真 -->
+        <div class="form__item">
+          <label for="file">＋写真を選択</label>
+          <input type="file" id="file" style="display:none;" value="upload">
+        </div>
+        <button type="submit" id="btn--submit">送信する</button>
+      </form>
+    </div>
   </section>
   <footer>
     <!-- <p class="copy">© Ippo Inc All rights reserved.</p> -->
